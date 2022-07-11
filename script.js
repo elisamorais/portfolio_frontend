@@ -51,5 +51,5 @@ $(document).ready(funtion() {
                 nav:false
             }
         }
-    });
+    })
 });
