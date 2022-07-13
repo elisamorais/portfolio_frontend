@@ -115,6 +115,15 @@ header .logo h1 {
 #home .content .icons a:hover {
   color: #766A69;
 }
+#home .content h1 {
+  margin: 2rem 0;
+  font-size: 2rem;
+  color: #E5E5E5;
+}
+#home .content h1 span {
+  color: #fff;
+  font-family: "Lobster", sans-serif;
+}
 
 #about {
   display: grid;
@@ -246,10 +255,7 @@ header .logo h1 {
   place-items: center;
   width: 100vw;
   min-height: 100vh;
-  background: url(./imagens/envelope.webp) no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-color: #fff;
 }
 #contact h1 {
   font-size: 4rem;
@@ -294,7 +300,91 @@ header .logo h1 {
 }
 #contact .wrapper .info .item p {
   color: #333;
-  padding: 4rem;
+  padding-left: 4rem;
+}
+#contact .wrapper form {
+  width: 50vw;
+}
+#contact .wrapper form .inputBox {
+  font-size: 2rem;
+  color: #333;
+}
+#contact .wrapper form input, #contact .wrapper form text-area {
+  outline: none;
+  border: 0.2rem solid #E5E5E5;
+  background: none;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  color: #333;
+  font-size: 1.7rem;
+  font-weight: bold;
+  height: 4rem;
+  width: 100%;
+}
+#contact .wrapper form text-area1 {
+  resize: none;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  height: 20rem;
+  height: 4rem;
+  width: 100%;
+}
+#contact .wrapper input[type=submit] {
+  outline: none;
+  border: none;
+  background: #766A69;
+  color: #E5E5E5;
+  border-radius: 5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 2px 0;
+  height: 4rem;
+  width: 14rem;
+  background: #766A69;
+  color: #E5E5E5;
+}
+#contact .wrapper input[type=submit]:hover {
+  background: #333;
+}
+#contact .wrapper input[type=submit]:hover {
+  background: #333;
+}
+
+#footer {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  background: #333;
+}
+#footer .logo {
+  text-decoration: none;
+}
+#footer .logo h1 {
+  font-size: 3rem;
+  font-family: "Lobster", sans-serif;
+  color: #E5E5E5;
+  margin: 2rem 0;
+}
+#footer .icons {
+  margin: 2rem 0;
+}
+#footer .icons a {
+  text-decoration: none;
+  font-size: 3rem;
+  margin: 0 1rem;
+  color: #766A69;
+}
+#footer .icons a:hover {
+  color: #766A69;
+}
+#footer h1 {
+  margin: 2rem 0;
+  font-size: 2rem;
+  color: #E5E5E5;
+}
+#footer h1 span {
+  color: #E5E5E5;
 }
 
 .fa-times {
@@ -371,6 +461,15 @@ header .logo h1 {
     width: 100%;
   }
   .my-progress .line {
+    width: 100%;
+  }
+  #contact .wrapper {
+    flex-flow: column;
+  }
+  #contact .wrapper .info {
+    width: 100%;
+  }
+  #contact .wrapper form {
     width: 100%;
   }
 }
